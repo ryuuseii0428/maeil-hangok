@@ -16,14 +16,14 @@ h1
 
 .imgDiv
 {
-    max-width: 31.25rem;
+    max-width: auto;
     height: 31.25rem;
     position: relative;
 }
 
 .imgDiv img
 {
-    max-width: 31.25rem;
+    max-width: auto;
     height: 31.25rem;
     position: absolute;
     left: 50%;
