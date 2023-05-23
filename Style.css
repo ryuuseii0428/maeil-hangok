@@ -1,29 +1,22 @@
-h1 
+.center
 {
-    font-size: 1.5rem;
-}
-
-.Lys
-{
-    font-size: 1rem;
-}
-
-.albumMenuText
-{
-    font-size: 1rem;
+    display: grid;
+    grid-auto-rows: minmax(25%);
+    grid-template-columns: repeat(1,100%);
+    place-items: center;
 }
 
 
 .imgDiv
 {
-    max-width: auto;
+    width: 31.25rem;
     height: 31.25rem;
     position: relative;
 }
 
 .imgDiv img
 {
-    max-width: auto;
+    width: 31.25rem;
     height: 31.25rem;
     position: absolute;
     left: 50%;
