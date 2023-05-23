@@ -6,6 +6,11 @@ body
     place-items: center;
 }
 
+.header
+{
+    font-size: 100%;
+}
+
 .imgDiv img
 {
     height: 100%;
