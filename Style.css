@@ -1,46 +1,41 @@
-.center
+body
 {
     display: grid;
-    grid-auto-rows: minmax(25%);
-    grid-template-columns: repeat(1,100%);
+    grid-template-columns: auto;
+    grid-auto-rows: (1fr);
     place-items: center;
-}
-
-
-.imgDiv
-{
-    width: 31.25rem;
-    height: 31.25rem;
-    position: relative;
 }
 
 .imgDiv img
 {
-    width: 31.25rem;
-    height: 31.25rem;
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    margin-left: -15.625rem;
-    margin-top: -15.625rem;
+    height: 100%;
+    width: 100%;
+    place-items: center;
 }
 
-.albumMenu p
+.imgDiv
 {
+    position: relative;
+}
+
+.albumMenu
+{
+    display: none;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    
+}
+
+.Lys
+{
+    width: 100%;
+    height: 100%;
     text-align: center;
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
+    font-size: 100%;
+    
 }
 
-.imgDiv .albumMenu
-{
-    opacity: 0;
-    transition: opacity 1s ease;
-}
 
-.imgDiv:hover .albumMenu
-{
-    opacity: 0.8;
-}
+
+
