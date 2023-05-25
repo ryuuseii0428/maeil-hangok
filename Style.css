@@ -39,6 +39,7 @@ body
     transition: opacity 1s;
 }
 
+
 .imgDiv:hover > .albumMenu
 {
     opacity: 0.8;
@@ -47,8 +48,9 @@ body
 .albumMenuText
 {
     text-align: center;
-    margin-top: -60%;
     font-size: 1fr;
+    font-style:oblique;
+    font-weight: bolder;
     color: lightgray;
 }
 
@@ -61,6 +63,54 @@ body
     color: lightgray;    
 }
 
+.albumButton
+{
+    display: grid;
+    grid-template-columns: auto;
+    grid-auto-rows: (1fr);
+    place-items: center;
+    align-items: center;
+    position: absolute;
+    height: 1fr;
+    width: 90%;
+    left: 5%;
+    top: -0%;
+    z-index: 1;
+    opacity: 0;
+    transition: opacity 1s;
+}
 
+.youtubeText 
+{
+    position: absolute;
+    top: 25%;
+    color: lightgray;
+    font-style :normal;
+    font-weight: bolder;
+}
+
+.instarText
+{
+    position: absolute;
+    top: 50%;
+    color: lightgray;
+    font-style :normal;
+    font-weight: bolder;
+}
+
+.twitterText
+{
+    position: absolute;
+    top: 75%;
+    color: lightgray;
+    font-style :normal;
+    font-weight: bolder;
+    text-decoration: none;
+}
+
+.imgDiv:hover > .albumButton
+{
+    opacity: 1;
+}
 
 

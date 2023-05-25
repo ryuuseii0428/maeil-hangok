@@ -2,13 +2,39 @@ var albumNum = 0;
 var albumImgs = document.getElementsByClassName("album");
 var lyses = document.getElementsByClassName("lys");
 var albumText = document.getElementsByClassName("albumMenuText");
+var youtubehref = document.getElementsByClassName("youtubeButton");
+var instarhref = document.getElementsByClassName("instarButton");
+var twitterhref = document.getElementsByClassName("twitterButton");
+var twitterText = document.getElementsByClassName("twitterText")
 
 function AlbumRandomSys()
         {
-            albumNum = parseInt(Math.random() * 2);
-            if(albumNum == 0) num_a();
-            if(albumNum == 1) num_b();
+            albumNum = parseInt(Math.random() * 3);
+            if(albumNum == 0) num_0();
+            if(albumNum == 1) num_1();
+            if(albumNum == 2) num_2();
+
         }
+
+function AlbumButton()
+{
+
+}
+
+function YoutubeButton()
+{
+
+}
+
+function InstarButton()
+{
+
+}
+
+function TwitterButton()
+{
+
+}
 
         
         
@@ -29,7 +55,7 @@ function AlbumRandomSys()
         
         
         
-        function num_a()
+        function num_0()
         {
             albumImgs[0].src = "./imgs/album_00.jpg"
             lyses[0].innerHTML = "出来れば世界を僕は塗り変えたい<br/>"+
@@ -69,11 +95,14 @@ function AlbumRandomSys()
                                 "心絡まって ローリング ローリング<br/>"+
                                 "凍てつく世界を転がるように走り出した<br/>";
 
-            albumText[0].innerHTML = "転がる岩、君に朝が降る<br/><br/>"+
-                                    "結束バンド<br/>";
+            albumText[0].innerHTML = "転がる岩、君に朝が降る - 結束バンド<br/>";
+            youtubehref[0].href = "https://youtu.be/E5O0mCrUdAM";
+            instarhref[0].href = "https://www.instagram.com/btr_isosta/";
+            twitterhref[0].href = "https://twitter.com/BTR_anime";
+
         }
 
-        function num_b()
+        function num_1()
         {
             albumImgs[0].src = "./imgs/album_01.png"
             lyses[0].innerHTML = "(私+期待－不安)×ギター=ロックだ<br/>"+
@@ -134,7 +163,67 @@ function AlbumRandomSys()
                                 "束ねていこう 今を 明日も もっと きっと<br/>"+
                                 "何処までも<br/>";
 
-            albumText[0].innerHTML = "光の中へ<br/><br/>"+
-                                    "結束バンド<br/>";
+            albumText[0].innerHTML = "光の中へ - 結束バンド<br/>";
+            youtubehref[0].href = "https://youtu.be/29t3pJd75XU";
+            instarhref[0].href = "https://www.instagram.com/btr_isosta/";
+            twitterhref[0].href = "https://twitter.com/BTR_anime";
+        }
+
+        function num_2()
+        {
+            albumImgs[0].src = "./imgs/album_02.jpg"
+            lyses[0].innerHTML = "heaven on earth don’t you know that<br>"+
+                                "when together<br>"+
+                                "intertwining souls, we’re meant to belong<br>"+
+                                "I’ll spend my time waiting for you<br>"+
+                                "if you needed it to be loved,<br>"+
+                                "ohh<br><br>"+
+                                
+                                "sometimes it’s too good to be true is it real<br>"+
+                                "I trust you more than you’ll ever understand<br>"+
+                                "every new day that we get<br>"+
+                                "is a blessing to be let near your heart<br><br>"+
+                                
+                                "Don’t want nobody but you<br>"+
+                                "Oh I just need you<br>"+
+                                "nothing else matters in this lifetime<br>"+
+                                "If I have you by<br>"+
+                                "my side nothing can break me down I’ll be alright<br><br>"+
+                                
+                                "Don’t want nobody but you<br>"+
+                                "Oh I just need you baby<br>"+
+                                "everything makes sense when you lay<br>"+
+                                "your head next to mine<br>"+
+                                "I’ll be here, longing<br>"+
+                                "for this moment everytime<br><br>"+
+                                
+                                "I know that you won’t let me go<br>"+
+                                "you can tell me what is on your mind<br>"+
+                                "just talk to me, no matter what I will<br>"+
+                                "get us through the storms and clouds that we pass through, ooh<br><br>"+
+                                
+                                "for you there’s not a limit on sacrifice<br>"+
+                                "there’s not a thing that ever would be too much<br>"+
+                                "I’d risk it all for love<br>"+
+                                "you’re worth more than life<br><br>"+
+                                
+                                "Don’t want nobody but you<br>"+
+                                "Oh I just need you<br>"+
+                                "nothing else matters in this lifetime<br>"+
+                                "If I have you by<br>"+
+                                "my side nothing can break me down I’ll be alright<br><br>"+
+                                
+                                "Don’t want nobody but you<br>"+
+                                "Oh I just need you baby<br>"+
+                                "everything makes sense when you lay<br>"+
+                                "your head next to mine<br>"+
+                                "I’ll be here, longing<br>"+
+                                "for this moment everytime<br>";
+
+            albumText[0].innerHTML = "레몬시티(Lemon City) - need you<br>";
+            youtubehref[0].href = "https://youtu.be/CWfjjYMJl6U";
+            instarhref[0].href = "https://www.instagram.com/lemon_city11/";
+            twitterhref[0].href = "";
+            twitterText[0].style.textDecoration = "line-through";        
         }
         
