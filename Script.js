@@ -9,14 +9,17 @@ var youtubeText = document.getElementsByClassName("youtubeText")
 var instarText = document.getElementsByClassName("instarText")
 var twitterText = document.getElementsByClassName("twitterText")
 
+var singerName = [];
+
 function AlbumRandomSys()
         {
-            albumNum = parseInt(Math.random() * 5);
-            if(albumNum == 0) num_0();
-            if(albumNum == 1) num_1();
-            if(albumNum == 2) num_2();
-            if(albumNum == 4) num_4();
-
+            albumNum = parseInt(Math.random() * 6);
+            if(albumNum == 0) num_0("結束バンド");
+            if(albumNum == 1) num_1("結束バンド");
+            if(albumNum == 2) num_2("레몬시티(Lemon City)");
+            if(albumNum == 3) num_3("あいみょん");
+            if(albumNum == 4) num_4("TEE");
+            if(albumNum == 5) num_5("레몬시티(Lemon City)");
         }
 
 function AlbumButton()
@@ -58,7 +61,7 @@ function TwitterButton()
         
         
         
-        function num_0()
+        function num_0(singer)
         {
             albumImgs[0].src = "./imgs/album_00.jpg"
             lyses[0].innerHTML = "<br/>出来れば世界を僕は塗り変えたい<br/>"+
@@ -102,10 +105,10 @@ function TwitterButton()
             youtubehref[0].href = "https://youtu.be/E5O0mCrUdAM";
             instarhref[0].href = "https://www.instagram.com/btr_isosta/";
             twitterhref[0].href = "https://twitter.com/BTR_anime";
-
+            singerName[0] = singer;
         }
 
-        function num_1()
+        function num_1(singer)
         {
             albumImgs[0].src = "./imgs/album_01.png"
             lyses[0].innerHTML = "<br/>(私+期待－不安)×ギター=ロックだ<br/>"+
@@ -170,9 +173,10 @@ function TwitterButton()
             youtubehref[0].href = "https://youtu.be/29t3pJd75XU";
             instarhref[0].href = "https://www.instagram.com/btr_isosta/";
             twitterhref[0].href = "https://twitter.com/BTR_anime";
+            singerName[0] = singer;
         }
 
-        function num_2()
+        function num_2(singer)
         {
             albumImgs[0].src = "./imgs/album_02.jpg"
             lyses[0].innerHTML = "<br/>heaven on earth don’t you know that<br>"+
@@ -223,14 +227,69 @@ function TwitterButton()
                                 "I’ll be here, longing<br>"+
                                 "for this moment everytime<br>";
 
-            albumText[0].innerHTML = "레몬시티(Lemon City) - need you<br>";
+            albumText[0].innerHTML = "need you - 레몬시티(Lemon City)<br>";
             youtubehref[0].href = "https://youtu.be/CWfjjYMJl6U";
             instarhref[0].href = "https://www.instagram.com/lemon_city11/";
             twitterhref[0].href = "";
-            twitterText[0].style.textDecoration = "line-through";        
+            twitterText[0].style.textDecoration = "line-through"
+            singerName[1] = singer;        
         }
 
-        function num_4()
+        function num_3(singer)
+        {
+            albumImgs[0].src = "./imgs/album_03.jpg"
+            lyses[0].innerHTML = "<br>少し寂しそうな君に<br>"+
+                                "こんな歌を聴かせよう<br>"+
+                                "手を叩く合図 雑なサプライズ<br>"+
+                                "僕なりの精一杯<br><br>"+
+
+                                "埃まみれ ドーナツ盤には<br>"+
+                                "あの日の夢が踊る<br>"+
+                                "真面目に針を落とす<br>"+
+                                "息を止めすぎたぜ<br>"+
+                                "さあ腰を落ろしてよ<br><br>"+
+
+                                "フツフツと鳴り出す青春の音<br>"+
+                                "乾いたメロディーで踊ろうよ<br><br>"+
+
+                                "君はロックなんか聴かないと 思いながら<br>"+
+                                "少しでも僕に近づいてほしくて<br>"+
+                                "ロックなんか聴かないと 思うけれども<br>"+
+                                "僕はこんな歌で あんな歌で 恋を乗り越えてきた<br><br>"+
+
+                                "僕の心臓のBPMは<br>"+
+                                "190になったぞ<br>"+
+                                "君は気づくのかい？<br>"+
+                                "なぜ今笑うんだい？<br>"+
+                                "嘘みたいに泳ぐ目<br><br>"+
+
+                                "ダラダラと流れる青春の音<br>"+
+                                "乾いたメロディーは止まないぜ<br><br>"+
+
+                                "君はロックなんか聴かないと 思いながら<br>"+
+                                "あと少し僕に近づいてほしくて<br>"+
+                                "ロックなんか聴かないと 思うけれども<br>"+
+                                "僕はこんな歌で あんな歌で 恋に焦がれてきたんだ<br><br>"+
+
+                                "君がロックなんか聴かないこと 知ってるけど<br>"+
+                                "恋人のように寄り添ってほしくて<br>"+
+                                "ロックなんか聴かないと 思うけれども<br>"+
+                                "僕はこんな歌であんな歌で また胸が痛いんだ<br><br>"+
+
+                                "君はロックなんか聴かないと 思いながら<br>"+
+                                "少しでも僕に近づいてほしくて<br>"+
+                                "ロックなんか聴かないと 思うけれども<br>"+
+                                "僕はこんな歌で あんな歌で 恋を乗り越えてきた<br>"+
+                                "恋を乗り越えてきた<br>"
+
+            albumText[0].innerHTML = "君はロックを聴かない - あいみょん<br/>";
+            youtubehref[0].href = "https://youtu.be/ARwVe1MYAUA";
+            instarhref[0].href = "https://www.instagram.com/aimyon36";
+            twitterhref[0].href = "https://twitter.com/aimyonGtter";
+            singerName[2] = singer;
+        }
+
+        function num_4(singer)
         {
             albumImgs[0].src = "./imgs/album_04.jpg"
             lyses[0].innerHTML = "<br/>なぁ旅に出ないか なぁ海を見ないか<br>"+
@@ -310,5 +369,58 @@ function TwitterButton()
             instarText[0].style.textDecoration = "line-through";
             twitterhref[0].href = "";
             twitterText[0].style.textDecoration = "line-through";
+            singerName[3] = singer;
+        }
+
+        function num_5(singer)
+        {
+            albumImgs[0].src = "./imgs/album_05.jpg"
+            lyses[0].innerHTML = "<br/>Something about ya has changed In my eyes<br>"+
+                                "Suddenly I want you close all the time<br>"+
+                                "It's so gradual<br>"+
+                                "Slowly we fall<br>"+
+                                "Until we can't deny<br><br>"+
+                                
+                                "Maybe we should just give in<br>"+
+                                "We both know what we're wanting<br>"+
+                                "Baby it could be just like heaven<br><br>"+
+                                
+                                "So can I call you mine<br>"+
+                                "Baby let's make this climb<br>"+
+                                "I can't pretend, I can't lie<br>"+
+                                "I don't wanna be just friends<br>"+
+                                "Cause this feels more like heaven<br><br>"+
+                                
+                                "I've never felt this sure of somebody<br>"+
+                                "You got me like<br>"+
+                                "obsessed, impressed,<br>"+
+                                "how you move your body<br>"+
+                                "Yeah you're so godly<br>"+
+                                "Somehow I didn't see it before now<br>"+
+                                "Like my heart was hiding<br>"+
+                                "and you brought it out<br>"+
+                                "Make me so nervous<br>"+
+                                "How do I put this<br>"+
+                                "Baby we could be just like heaven<br><br>"+
+                                
+                                "So can I call you mine<br>"+
+                                "Baby let's make this climb<br>"+
+                                "I can't pretend, I can't lie<br>"+
+                                "I don't wanna be just friends<br>"+
+                                "Cause this feels more like heaven<br><br>"+
+                                
+                                "La la la la, uh huh, ooh<br>"+
+                                "La la la la la, uh huh, ooh<br><br>"+
+                                
+                                "Maybe we should just give in<br>"+
+                                "We both know what we're wanting<br>"+
+                                "Baby it could be just like heaven<br>";
+
+            albumText[0].innerHTML = "need you - 레몬시티(Lemon City)<br>";
+            youtubehref[0].href = "https://youtu.be/qq6F8G6in0U";
+            instarhref[0].href = "https://www.instagram.com/lemon_city11/";
+            twitterhref[0].href = "";
+            twitterText[0].style.textDecoration = "line-through"
+            singerName[1] = singer;        
         }
         
