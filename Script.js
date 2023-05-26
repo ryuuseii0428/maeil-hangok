@@ -5,14 +5,17 @@ var albumText = document.getElementsByClassName("albumMenuText");
 var youtubehref = document.getElementsByClassName("youtubeButton");
 var instarhref = document.getElementsByClassName("instarButton");
 var twitterhref = document.getElementsByClassName("twitterButton");
+var youtubeText = document.getElementsByClassName("youtubeText")
+var instarText = document.getElementsByClassName("instarText")
 var twitterText = document.getElementsByClassName("twitterText")
 
 function AlbumRandomSys()
         {
-            albumNum = parseInt(Math.random() * 3);
+            albumNum = parseInt(Math.random() * 5);
             if(albumNum == 0) num_0();
             if(albumNum == 1) num_1();
             if(albumNum == 2) num_2();
+            if(albumNum == 4) num_4();
 
         }
 
@@ -225,5 +228,87 @@ function TwitterButton()
             instarhref[0].href = "https://www.instagram.com/lemon_city11/";
             twitterhref[0].href = "";
             twitterText[0].style.textDecoration = "line-through";        
+        }
+
+        function num_4()
+        {
+            albumImgs[0].src = "./imgs/album_04.jpg"
+            lyses[0].innerHTML = "なぁ旅に出ないか なぁ海を見ないか<br>"+
+                                "通り過ぎゆく日々の中<br>"+
+                                "君に会い俺の中の何かがはじけた<br>"+
+                                "伝えたくて言えなくて それがまた苦しくて<br>"+
+                                "ああ どおすりゃいい 遠い空見上げて Naturally<br>"+
+                                "そんな日は変わらない Diary<br><br>"+
+
+                                "目にはうつらないもの 幸せの赤い糸<br>"+
+                                "君の小指に運ぶ風 薬指に誰かの影<br>"+
+                                "聞きたくて聞けなくて<br>"+
+                                "それがまた Jealousy で I'm so crazy<br>"+
+                                "今はまだ気づかぬふり<br>"+
+                                "Please let me know, if you love me<br><br>"+
+
+                                "いつからだろう君を思うと<br>"+
+                                "(Baby you don't know why)<br>"+
+                                "心痛くて眠れないよ<br>"+
+                                "今夜さよならが切なくて<br>"+
+                                "ほつれた糸たぐりよせて<br>"+
+                                "誰よりも心こめて歌うよ<br><br>"+
+
+                                "Baby I love you, I love you, I love you 何度も<br>"+
+                                "Only one, only one 感じあえる<br>"+
+                                "You always on my mind<br>"+
+                                "強くなる全て大切に思える<br>"+
+                                "(Baby I love you) I love you, I love you, I love you これからも<br>"+
+                                "Only one, only one 変わらない<br>"+
+                                "I'm always by your side 見上げよう<br>"+
+                                "二人だけの空 ずっと ずっと<br><br>"+
+
+                                "この街は変わってく 明日も明後日も<br>"+
+                                "水に映った君の横顔<br>"+
+                                "照らし出すオレンジの夕空よ<br>"+
+                                "眩しくて消えないでそれがまた恋しくて<br>"+
+                                "ああ もどかしい 世界の果てまで follow me<br>"+
+                                "君の過去をうけとめる everything everything<br><br>"+
+
+                                "波の静かな夜には歌い<br>"+
+                                "網をかけて引き寄せた未来<br>"+
+                                "夜の終わり近づくといつも<br>"+
+                                "君の小さなリップにキスを<br>"+
+                                "握ったこの手はなす事できずにまた寄り添って眠るの<br><br>"+
+
+                                "Baby I love you, I love you, I love you いつまでも<br>"+
+                                "Only one, only one そばにいて<br>"+
+                                "You always on my mind<br>"+
+                                "悲しみも全て大切に思える<br>"+
+                                "(Baby I love you) Oh I love you, I love you, I love you これからも<br>"+
+                                "Only one, only one 変わらない<br>"+
+                                "I'm always by your side いつまでも<br>"+
+                                "君のぬくもりを ずっと ずっと<br><br>"+
+
+                                "光のない道が二人の<br>"+
+                                "明日をうばったとしても<br>"+
+                                "過ごした思い出たちと君を信じて<br>"+
+                                "(Love you, love you, love you, love you)<br><br>"+
+
+                                "Baby I love you, I love you, I love you 何度も<br>"+
+                                "Only one, only one 感じあえる<br>"+
+                                "You always on my mind<br>"+
+                                "強くなる全て大切に思える<br>"+
+                                "(Baby I love you) Oh I love you, I love you, I love you これからも<br>"+
+                                "Only one, only one 変わらない<br>"+
+                                "I always by your side 誓うよ<br>"+
+                                "二人だけの日々<br>"+
+                                "ずっと ずっと ずっと<br><br>"+
+
+                                "Baby I will always fall in love with you...<br>"+
+                                "I promise you, 'cause you'll be mine<br>"+
+                                "I will always love you<br>";
+
+            albumText[0].innerHTML = "ベイビー・アイラブユー - TEE<br/>";
+            youtubehref[0].href = "https://youtu.be/l7z0QXvE1gs";
+            instarhref[0].href = "";
+            instarText[0].style.textDecoration = "line-through";
+            twitterhref[0].href = "";
+            twitterText[0].style.textDecoration = "line-through";
         }
         
