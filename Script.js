@@ -61,7 +61,7 @@ function TwitterButton()
         function num_0()
         {
             albumImgs[0].src = "./imgs/album_00.jpg"
-            lyses[0].innerHTML = "出来れば世界を僕は塗り変えたい<br/>"+
+            lyses[0].innerHTML = "<br/>出来れば世界を僕は塗り変えたい<br/>"+
                                 "戦争をなくすような大逸れたことじゃない<br/>"+
                                 "だけどちょっと それもあるよな<br/><br/>"+
 
@@ -108,7 +108,7 @@ function TwitterButton()
         function num_1()
         {
             albumImgs[0].src = "./imgs/album_01.png"
-            lyses[0].innerHTML = "(私+期待－不安)×ギター=ロックだ<br/>"+
+            lyses[0].innerHTML = "<br/>(私+期待－不安)×ギター=ロックだ<br/>"+
                                 "(私+君－時間)÷ギター=ライブだ<br/><br/>"+
                                 
                                 "戦々恐々になってる<br/>"+
@@ -175,7 +175,7 @@ function TwitterButton()
         function num_2()
         {
             albumImgs[0].src = "./imgs/album_02.jpg"
-            lyses[0].innerHTML = "heaven on earth don’t you know that<br>"+
+            lyses[0].innerHTML = "<br/>heaven on earth don’t you know that<br>"+
                                 "when together<br>"+
                                 "intertwining souls, we’re meant to belong<br>"+
                                 "I’ll spend my time waiting for you<br>"+
@@ -233,7 +233,7 @@ function TwitterButton()
         function num_4()
         {
             albumImgs[0].src = "./imgs/album_04.jpg"
-            lyses[0].innerHTML = "なぁ旅に出ないか なぁ海を見ないか<br>"+
+            lyses[0].innerHTML = "<br/>なぁ旅に出ないか なぁ海を見ないか<br>"+
                                 "通り過ぎゆく日々の中<br>"+
                                 "君に会い俺の中の何かがはじけた<br>"+
                                 "伝えたくて言えなくて それがまた苦しくて<br>"+
