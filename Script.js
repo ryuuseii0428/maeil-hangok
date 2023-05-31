@@ -778,7 +778,7 @@ function AlbumRandomSys()
                                 +"<br>더 야속하게 밀어 넘겨주길<br>"
             
             albumText[0].innerHTML = "Cistus (Vocal.악월) - 향성(向性)<br>";
-            youtubehref[0].href = "https://youtu.be/cgetRnnEWS0";
+            youtubehref[0].href = "https://youtu.be/1CDyE5WjxuI";
             instarhref[0].href = "https://www.instagram.com/hyangseong_music/";
             twitterhref[0].href = "https://twitter.com/hyangseong_";
             singerName[4] = singer;
